@@ -11,11 +11,7 @@ function MusicSchoolContactUs() {
     event.preventDefault();
     console.log('Submitted:', { email, message });
   };
-  const handlesubmit1 = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault(); // Prevents the default form submission behavior
-    console.log('Form submitted!');
-    window.location.reload(); // Reloads the window
-  };
+ 
 
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900 py-12 pt-36 relative">
@@ -52,9 +48,7 @@ function MusicSchoolContactUs() {
             rows={5}
             required
           ></textarea>
-          <form
-           onSubmit={handlesubmit1}
-          >
+        
 
           <button
             type="submit"
@@ -63,7 +57,6 @@ function MusicSchoolContactUs() {
             >
             Send Message
           </button>
-            </form>
         </form>
       </div>
     </div>

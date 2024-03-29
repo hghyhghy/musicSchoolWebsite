@@ -97,7 +97,7 @@ export const WavyBackground = ({
     return () => {
       cancelAnimationFrame(animationId);
     };
-  }, []);
+  });
 
   const [isSafari, setIsSafari] = useState(false);
   useEffect(() => {
@@ -107,7 +107,7 @@ export const WavyBackground = ({
         navigator.userAgent.includes("Safari") &&
         !navigator.userAgent.includes("Chrome")
     );
-  }, []);
+  });
 
   return (
     <div
